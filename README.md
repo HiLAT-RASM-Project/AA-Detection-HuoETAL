@@ -1,9 +1,12 @@
-# Code-for-Huo-et-al.-2024-
-Code for creating figures in Huo et al. (2024)
-----
-## Citation
+# Overview
 
----- 
+This repository contains the Python codes used to quantify Arctic Amplification (AA), which is characterized by a rapid surface air temperature (SAT) warming in the Arctic. The scripts provided here are specifically designed to recreate the figures presented in Huo et al. (2024).
+
+## Citation
+If you use this code or adapt it in your work, please cite the following paper:
+
+Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W. & Qin, Y., 2024. Assessing Radiative Feedbacks and Their Contribution to the Arctic Amplification Measured by Various Metrics. *Journal of Geophysical Research*.
+
 ## Quick Start
 To create Figs.1-3 in Huo et al. (2024) run Fig1.py, Fig2.py and Fig3.py respectively.
 For Figs. 4-7, you'll need NCL, NCO and Python.
@@ -14,5 +17,6 @@ For Figs. 4-7, you'll need NCL, NCO and Python.
 3. use ncremap to regrid data files to the same as kernel files. 
 4. run planck_lapserate_albedo.py and cloud_feedback.py first to create the text files of zonal mean radiative feedbacks.
 5. Run Fig4.py, Fig5.py, Fig6.py and Fig7.py respectively to create Figs.4-7 in Huo et al. (2024).
------
-Questions/comments? Post in the issues tab, or email me at yiling.huo at pnnl dot com
+
+### Question/Comment
+Please post it in the issues tab, or email me at yiling.huo at pnnl dot com
