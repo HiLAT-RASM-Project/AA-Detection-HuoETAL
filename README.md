@@ -5,7 +5,7 @@ This repository contains the Python codes used to quantify Arctic Amplification 
 ## Citation
 If you use this code or adapt it in your work, please cite the following paper:
 
-Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W. & Qin, Y., 2024. Assessing Radiative Feedbacks and Their Contribution to the Arctic Amplification Measured by Various Metrics. *Journal of Geophysical Research: Atmosphere*.
+Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W. & Qin, Y., 2024. Assessing Radiative Feedbacks and Their Contribution to the Arctic Amplification Measured by Various Metrics. *Journal of Geophysical Research: Atmosphere*, 129, e2024JD040880. https://doi.org/10.1029/e2024JD040880
 
 ## Quick Start
 **Note:** NCL and NCO are required for Figs. 4-7.
