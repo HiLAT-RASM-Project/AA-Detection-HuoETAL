@@ -15,7 +15,7 @@ Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W.
 `ncl tools/t_kernel_to_plev.ncl`  
 `ncl tools/q_kernel_to_plev.ncl`
 4. Use ncremap to regrid data files to the same as kernel files. 
-5. Run planck_lapserate_albedo.py and cloud_feedback.py first to create the text files of zonal mean radiative feedbacks.
+5. Run planck_lapserate_albedo_watervapor.py and cloud_feedback.py first to create the text files of zonal mean radiative feedbacks.
 6. Run Fig4.py, Fig5.py, Fig6.py, and Fig7.py to create Figs.4-7 in Huo et al. (2024).
 
 ### Question/Comment
