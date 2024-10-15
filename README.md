@@ -12,7 +12,9 @@ Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W.
 1. Download HadCRUT, ERA5 and CESM2 LE monthly surface temperature data.
 
    HadCRUT: https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.0.2.0/download.html
+
    ERA5: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means?tab=download
+
    CESM2 LE: https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.html
 3. Run Fig1.py, Fig2.py, and Fig3.py to generate Figs.1-3 in Huo et al. (2024).
 4. Download the CAM5 kernels (alb.kernel.nc, q.kernel.nc, t.kernel.nc, ts.kernel.nc) and radiative forcings (aerosol.forcing.nc, ghg.forcing.nc) here: https://zenodo.org/record/997902 
