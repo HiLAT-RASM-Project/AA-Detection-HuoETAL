@@ -10,6 +10,7 @@ Huo, Y., Wang, H., Lu, J., Fu, Q., Jonko, A.K., Lee, Y.J., Ma, W., Maslowski, W.
 ## Quick Start
 **Note:** NCL and NCO are required for Figs. 4-7.
 1. Download HadCRUT, ERA5 and CESM2 LE monthly surface temperature data.
+
    HadCRUT: https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.0.2.0/download.html
    ERA5: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means?tab=download
    CESM2 LE: https://www.earthsystemgrid.org/dataset/ucar.cgd.cesm2le.atm.proc.monthly_ave.html
