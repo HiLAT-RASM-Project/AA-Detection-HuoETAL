@@ -203,11 +203,6 @@ for iyear in range(nyear):
     
     
 
-# #Take the area average; incorporate the part due to surface temperature change itself 
-# dLW_planck_areamean_12mmean=moving_average(areaavg_lat(-dLW_planck-tas,lat,latmin), 12)
-# # Take the area average 
-# dLW_lapserate_areamean_12mmean=moving_average(areaavg_lat(-dLW_lapserate,lat,latmin), 12)
-# dSW_alb_areamean_12mmean=moving_average(areaavg_lat(dSW_alb,lat,latmin), 12)
 clev=0.05#confidence level
 # seasonal
 m1=0;m2=12;nm=m2-m1
@@ -299,11 +294,6 @@ elif iAA==5:
     del tasaa
 del tmp
 tas_smean=seasonal_rolling_mean_along_axis(tas1,m1,m2,ax=0)
-dLW_planck_smean=seasonal_rolling_mean_along_axis(-dLW_planck-tas,m1,m2,ax=0)
-dLW_lapserate_smean=seasonal_rolling_mean_along_axis(-dLW_lapserate,m1,m2,ax=0)
-dSW_alb_smean=seasonal_rolling_mean_along_axis(dSW_alb,m1,m2,ax=0)
-dLWSW_smean=seasonal_rolling_mean_along_axis(dLWSW,m1,m2,ax=0)
-
 
 ### Water vapor feedback
 ## Add the LW and SW responses. Note the sign convention difference between LW and SW!
