@@ -127,6 +127,10 @@ alb=(variable1-ds['msnswrf'][12*(stryr-filestryr):12*(endyr-filestryr+1)])/varia
 alb[alb<0]=np.nan;alb[alb>1]=np.nan;alb=dataanomaly(alb)*100###ERA5
 if KLVL=='SFC':totaltoa=dataanomaly((ds['msnlwrf'][:]+ds['msnswrf'][:])[12*(stryr-filestryr):12*(endyr-filestryr+1)])
 else:totaltoa=dataanomaly((ds['mtnlwrf'][:]+ds['mtnswrf'][:])[12*(stryr-filestryr):12*(endyr-filestryr+1)])
+ds1=nc.Dataset('/pscratch/sd/h/huoyilin/e5.sfc.d2m_mslhf_msnlwrf_msnlwrfcs_msnswrf_msnswrfcs_msshf_mtnlwrf_mtnlwrfcs_mtnswrf_mtnswrfcs_sp_p62_70_72_74_76.162.19402022.192x288.nc')
+ohu=dataanomaly((-ds1['mslhf'][:]-ds1['msshf'][:])[12*(stryr-filestryr):12*(endyr-filestryr+1)])
+ds2=nc.Dataset('/pscratch/sd/h/huoyilin/e5.pl.MSEVDP.19512022.192x288.nc')
+aht=dataanomaly((-ds1['mtnswrf'][:]+ds1['msnswrf'][:]-ds1['mtnlwrf'][:]+ds1['msnlwrf'][:])[12*(stryr-filestryr):12*(endyr-filestryr+1)])-ohu#-333550*(ds2['mtpr'][12*(stryr-filestryr):12*(endyr-filestryr+1)]))
 # Read TOA albedo kernel
 ds=nc.Dataset(kernelfolder+'alb.kernel.nc')###CAM5Kernel
 alb_kernel=ds['FSN'+varend][:]###CAM5Kernel
@@ -295,6 +299,8 @@ dLW_planck_smean=seasonal_rolling_mean_along_axis(-dLW_planck-tas,m1,m2,ax=0)
 dLW_lapserate_smean=seasonal_rolling_mean_along_axis(-dLW_lapserate,m1,m2,ax=0)
 dSW_alb_smean=seasonal_rolling_mean_along_axis(dSW_alb,m1,m2,ax=0)
 dLWSW_smean=seasonal_rolling_mean_along_axis(dLWSW,m1,m2,ax=0)
+dAHT_smean=seasonal_rolling_mean_along_axis(aht,m1,m2,ax=0)
+dOHU_smean=seasonal_rolling_mean_along_axis(ohu,m1,m2,ax=0)
 
 ### Water vapor feedback
 ## Add the LW and SW responses. Note the sign convention difference between LW and SW!
